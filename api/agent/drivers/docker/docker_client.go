@@ -43,7 +43,6 @@ type dockerClient interface {
 	InspectImage(ctx context.Context, name string) (*docker.Image, error)
 	ListImages(ctx context.Context) ([]docker.APIImages, error)
 	RemoveImage(id string, opts docker.RemoveImageOptions) error
-	InspectContainerWithContext(container string, ctx context.Context) (*docker.Container, error)
 	Stats(opts docker.StatsOptions) error
 	Info(ctx context.Context) (*docker.DockerInfo, error)
 	DiskUsage(docker.DiskUsageOptions) (*docker.DiskUsage, error)
