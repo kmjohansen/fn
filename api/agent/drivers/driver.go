@@ -252,7 +252,6 @@ type Config struct {
 	MaxTmpFsInodes          uint64        `json:"max_tmpfs_inodes"`
 	MaxImageCacheSize       uint64        `json:"max_image_cache_size"`
 	ImageCacheCleanInterval time.Duration `json:"image_cache_clean_interval"`
-	EnableReadOnlyRootFs    bool          `json:"enable_readonly_rootfs"`
 	EnableTini              bool          `json:"enable_tini"`
 	EnableReadOnlyRootFs    bool          `json:"enable_readonly_rootfs"`
 	MaxRetries              uint64        `json:"max_retries"`
